@@ -1,63 +1,60 @@
-# Forge Hub
+# Forge Hub — Unified Ecosystem Launcher & Workspace Supervisor
 
-> Unified application launcher, project discovery, and developer ecosystem manager for ForgeNexa.
+[![Forge Hub Screenshot](assets/forge-hub.svg)](https://forgenexa.github.io/)
 
-[![Forge Hub CI](https://github.com/ForgeNexa/forge-hub/actions/workflows/ci.yml/badge.svg)](https://github.com/ForgeNexa/forge-hub/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](LICENSE)
+[![Go Discovery](https://img.shields.io/badge/Go%20Discovery-1.23+-00ADD8?style=flat-square&logo=go)](https://golang.org)
+[![React 19](https://img.shields.io/badge/React-19.0.0-61DAFB?style=flat-square&logo=react)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.8+-3178C6?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
+[![CI](https://github.com/ForgeNexa/forge-hub/actions/workflows/ci.yml/badge.svg)](https://github.com/ForgeNexa/forge-hub/actions/workflows/ci.yml)
 
-Forge Hub is the central mission-control desktop launcher for the **ForgeNexa** developer ecosystem. It automatically discovers installed Forge applications, detects local git projects, monitors runtime processes, and offers one-click project context switching.
-
----
-
-## Features
-
-- **Automated Ecosystem Discovery**: Scans `$PATH` and standard installation locations for Forge IDE, Forge API, Forge Terminal, and Forge Git.
-- **Project Workspaces**: Quickly open any active repository across all compatible Forge tools.
-- **Process Supervision**: Monitor running instances, resource utilization, and background daemons.
-- **Unified Settings**: Synchronize keyboard shortcuts, theme preferences, and developer profiles.
+> **"Mission control for your developer tools."**  
+> An open-source, local-first application launcher that discovers installed Forge tools, manages project workspaces, and supervises background processes.
 
 ---
 
-## Architecture
+## 🏷️ Tags & Hashtags
 
-- **Discovery Supervisor**: Built in Go (`discovery/`), providing low-latency system-level process queries, binary path resolution, and filesystem monitoring.
-- **Hub Workbench**: Built with React 19, TypeScript, Vite, Tailwind CSS, and Lucide icons.
+`#ForgeNexa` `#ForgeHub` `#AppLauncher` `#DeveloperTools` `#DevTools` `#GoLang` `#React19` `#TypeScript` `#ProcessSupervisor` `#OpenSource` `#LocalFirst`
 
 ---
 
-## Getting Started
+## ✨ Features
 
-### Prerequisites
+- **Automated Ecosystem Discovery**: Discovers installed binaries for Forge IDE, Forge API, Forge Terminal, and Forge Git across `$PATH` and system directories.
+- **Project Context Switcher**: One-click opening of active repositories across all compatible Forge tools.
+- **Process Supervisor**: Monitor background daemon status, active ports, and memory footprint.
+- **Unified Settings**: Sync keyboard shortcuts, themes, and developer profiles.
 
-- Go 1.22+
-- Bun 1.2+ or Node.js 20+
+---
 
-### Development
+## 🛠️ Build & Development
 
 ```bash
-# Test the discovery engine
+# Test the Go Discovery Engine
 cd discovery
 go test -v -race ./...
 
-# Run the frontend workbench
+# Build the React 19 Launcher Workbench
 cd ../web
-bun install
-bun run dev
+bun install --frozen-lockfile
+bun run build
 ```
 
 ---
 
-## Part of the ForgeNexa Ecosystem
+## 🌐 Part of ForgeNexa
 
-- [Forge IDE](https://github.com/ForgeNexa/forge-ide) — Extensible, high-performance code editor
-- [Forge API](https://github.com/ForgeNexa/forge-api) — Interactive API testing and debugging client
-- [Forge Terminal](https://github.com/ForgeNexa/forge-terminal) — High-throughput multiplexed terminal emulator
-- [Forge Git](https://github.com/ForgeNexa/forge-git) — Visual git workspace and diff inspector
-- [Forge Hub](https://github.com/ForgeNexa/forge-hub) — Unified launcher and project supervisor
-- [Forge Core](https://github.com/ForgeNexa/forge-core) — Shared Go foundation libraries
+Forge Hub is the central launcher of the [ForgeNexa Developer Tools Ecosystem](https://forgenexa.github.io/).
+
+- [Forge IDE](https://github.com/ForgeNexa/forge-ide) — Code editor with Monaco and Go daemon
+- [Forge API](https://github.com/ForgeNexa/forge-api) — High-throughput API testing client
+- [Forge Terminal](https://github.com/ForgeNexa/forge-terminal) — Multiplexed terminal emulator
+- [Forge Git](https://github.com/ForgeNexa/forge-git) — Visual commit graph DAG and diff viewer
+- [Forge Core](https://github.com/ForgeNexa/forge-core) — Shared Go systems foundation
 
 ---
 
-## License
+## 📄 License
 
 MIT © [ForgeNexa](https://forgenexa.github.io)
